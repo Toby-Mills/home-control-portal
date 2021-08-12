@@ -100,6 +100,11 @@ body{
 	content:url(images/node-red.png);
 }
 
+.home-assisant .image img{
+	height: 3em;
+	content:url(images/home-assistant.jpg);
+}
+
 .tasmota .image img{
 	height: 3em;
 	content:url(images/tasmota.png);
