@@ -6,13 +6,14 @@ body {
 
 body{
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 3em 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 3em 1fr 1fr 1fr 1fr;
 	grid-template-areas: 
-		'header header'
-		'router nas'
-		'amp plex'
-		'sprinklers printer'
+		'header header header'
+		'router nas amp'
+		'node-red home-assistant sprinklers'
+		'power printer'
+		'outside-lights fairy-lights floor-lamp'
 		;
  	width: 100vw;
 	height: 100vh;
@@ -27,8 +28,9 @@ body{
 	grid-template-areas: 
 		'header'
 		'router' 'nas'
-		'amp' 'plex'
-		'sprinklers' 'printer'
+		'amp' 'node-red' 'home-assistant'
+		'sprinklers' 'power' 'printer'
+		'outside-lights' 'fairy-lights' 'floor-lamp'
 		;
 }
 }
@@ -57,6 +59,30 @@ body{
 
 .printer{
 	grid-area: printer;
+}
+
+.node-red{
+	grid-area: node-red;
+}
+
+.home-assistant{
+	grid-area: home-assistant;
+}
+
+.power{
+	grid-area: power;
+}
+
+.outside-lights{
+	grid-area: outside-lights;
+}
+
+.fairy-lights{
+	grid-area: fairy-lights;
+}
+
+.floor-lamp{
+	grid-area: floor-lamp;
 }
 
 .button .image{
@@ -108,6 +134,11 @@ body{
 .tasmota .image img{
 	height: 3em;
 	content:url(images/tasmota.png);
+}
+
+.power .image img{
+	height: 3em;
+	content:url(images/victron.jpg);
 }
 
 .sprinklers .image{
