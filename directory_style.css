@@ -45,6 +45,10 @@ body{
 	grid-area: router;
 }
 
+.nas{
+	grid-area: nas;
+}
+
 .amp{
 	grid-area: amp;
 }
